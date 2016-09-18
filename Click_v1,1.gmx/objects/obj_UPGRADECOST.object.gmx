@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,15 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///GLOBALS
+            <string>var cost = floor(global.upgradecost);
 
-global.money = 0;
-global.MPC = 0;
-global.upgradecost = 500;
-global.upgradecost2 = 10;
-global.MPS = 0;
-global.TotalMps = 0;
-
+draw_set_font(fnt_SMALL);
+draw_set_colour(c_black);
+draw_text(128, 192, "COST: " + string(cost));
 </string>
           </argument>
         </arguments>
